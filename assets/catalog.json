@@ -1,0 +1,482 @@
+[
+  {
+    "title": "Platform Maker",
+    "url": "https://drunkyeti.itch.io/platform-maker",
+    "image": "./assets/covers/platform-maker.webp",
+    "description": "Build your own platform games.",
+    "category": "Tools",
+    "browser": true
+  },
+  {
+    "title": "Top Down Maker",
+    "url": "https://drunkyeti.itch.io/top-down-maker",
+    "image": "./assets/covers/top-down-maker.webp",
+    "description": "",
+    "category": "Tools",
+    "browser": true
+  },
+  {
+    "title": "Parcel Junction",
+    "url": "https://drunkyeti.itch.io/parcel-junction",
+    "image": "./assets/covers/parcel-junction.webp",
+    "description": "Rotate the rails, time the departures, and get every little parcel cart home without a collision.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Flipper Riot",
+    "url": "https://drunkyeti.itch.io/flipper-riot",
+    "image": "./assets/covers/flipper-riot.webp",
+    "description": "Defend your drain, steal the next power-up, and knock everybody else out.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Pocket Pandemonium",
+    "url": "https://drunkyeti.itch.io/pocket-pandemonium",
+    "image": "./assets/covers/pocket-pandemonium.webp",
+    "description": "Arcade billiards goes off the rails: gummy balls, strange tables, daily challenges, etc",
+    "category": "Games",
+    "browser": true
+  },
+  {
+    "title": "Blackout Salvage",
+    "url": "https://drunkyeti.itch.io/blackout-salvage",
+    "image": "./assets/covers/blackout-salvage.webp",
+    "description": "Recover lost cargo from a flooded power station.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Heartpost: Cupid's Crossing - Sidescroller Asset Pack",
+    "url": "https://drunkyeti.itch.io/heartpost-cupids-crossing-sidescroller-asset-pack",
+    "image": "./assets/covers/heartpost-cupids-crossing-sidescroller-asset-pack.webp",
+    "description": "A cel-shaded Valentine side-scroller collection: winged courier, whimsical rivals, townspeople, rose gardens, etc.",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Bubble Buddies",
+    "url": "https://drunkyeti.itch.io/bubble-buddies",
+    "image": "./assets/covers/bubble-buddies.webp",
+    "description": "Merge bubbles and inner charms, make tiny gifts, and take a keepsake-filled trip to the Moon Market.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Oddly Stacked",
+    "url": "https://drunkyeti.itch.io/oddly-stacked",
+    "image": "./assets/covers/oddly-stacked.webp",
+    "description": "Nest strange shapes, ship wobbly sculptures, and take your show to the Traveling Fair.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Puzzle Maker",
+    "url": "https://drunkyeti.itch.io/puzzle-maker",
+    "image": "./assets/covers/puzzle-maker.webp",
+    "description": "Build your own puzzle games.",
+    "category": "Tools",
+    "browser": true
+  },
+  {
+    "title": "Pinball Maker",
+    "url": "https://drunkyeti.itch.io/pinball-maker",
+    "image": "./assets/covers/pinball-maker.webp",
+    "description": "Build your own pinball table. Drag in parts, import your art and music,",
+    "category": "Tools",
+    "browser": true
+  },
+  {
+    "title": "Midnight Loot",
+    "url": "https://drunkyeti.itch.io/midnight-loot",
+    "image": "./assets/covers/midnight-loot.webp",
+    "description": "A haunted flea market, a satchel full of strange treasures",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Quadrift",
+    "url": "https://drunkyeti.itch.io/quadrift",
+    "image": "./assets/covers/quadrift.webp",
+    "description": "Four walls. One core. Redirect falling cubes, blast the board, and unleash gravity surges",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Cornerfall: Chaos Circuit",
+    "url": "https://drunkyeti.itch.io/cornerfall",
+    "image": "./assets/covers/cornerfall.webp",
+    "description": "Claim corners. Blast rivals. Steal territory. A colorful four-player strategy showdown",
+    "category": "Games",
+    "browser": true
+  },
+  {
+    "title": "Chainfall Deluxe",
+    "url": "https://drunkyeti.itch.io/chainfall-deluxe",
+    "image": "./assets/covers/chainfall-deluxe.webp",
+    "description": "Jump, capture and shape the battlefield across nine colorful 3D boards.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Schmuck Deluxe",
+    "url": "https://drunkyeti.itch.io/schmuck-deluxe",
+    "image": "./assets/covers/schmuck-deluxe.webp",
+    "description": "Climb from Schmuck to President in a stylish 3D card showdown.",
+    "category": "Games",
+    "browser": true
+  },
+  {
+    "title": "Nexus Wars Deluxe",
+    "url": "https://drunkyeti.itch.io/nexus-wars-deluxe",
+    "image": "./assets/covers/nexus-wars-deluxe.webp",
+    "description": "Shape the battlefield in a colorful 3D hex strategy game.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Snowball Showdown",
+    "url": "https://drunkyeti.itch.io/snowball-showdown",
+    "image": "./assets/covers/snowball-showdown.webp",
+    "description": "Dodge, dash, and unleash snowball chaos across three winter arenas.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "AR3NA: Foosball Circuit",
+    "url": "https://drunkyeti.itch.io/ar3na-foosball-circuit",
+    "image": "./assets/covers/ar3na-foosball-circuit.webp",
+    "description": "Cartoony foosball with spring-loaded characters, wild arenas, and couch versus. Bank it. Bend it. Run it back.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "KANA RONIN \u2014 SHRINE PATHS",
+    "url": "https://drunkyeti.itch.io/kana-ronin-shrine-paths",
+    "image": "./assets/covers/kana-ronin-shrine-paths.webp",
+    "description": "A polished overhead samurai collection with four-direction heroes and rivals",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "KANA RONIN \u2014 SAKURA TRAIL",
+    "url": "https://drunkyeti.itch.io/kana-ronin-sakura-trail",
+    "image": "./assets/covers/kana-ronin-sakura-trail.webp",
+    "description": "A crisp, cel-shaded samurai asset collection with a side-scrolling village",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "LANTERN SKY \u2014 TOP-DOWN CHINESE NEW YEAR",
+    "url": "https://drunkyeti.itch.io/lantern-sky-top-down-chinese-new-year",
+    "image": "./assets/covers/lantern-sky-top-down-chinese-new-year.webp",
+    "description": "A richly illustrated top-down Chinese New Year collection",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "LANTERN SKY \u2014 CHINESE NEW YEAR",
+    "url": "https://drunkyeti.itch.io/lantern-sky-chinese-new-year",
+    "image": "./assets/covers/lantern-sky-chinese-new-year.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "COMBINED ARMS \u2014 LAND, AIR & SEA",
+    "url": "https://drunkyeti.itch.io/combined-arms-land-air-sea",
+    "image": "./assets/covers/combined-arms-land-air-sea.webp",
+    "description": "Detailed isometric land, air and naval artwork with 12 unit classes, 16-view source sets, terrain, etc",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Yeti Below",
+    "url": "https://drunkyeti.itch.io/yeti-below",
+    "image": "./assets/covers/yeti-below.webp",
+    "description": "A cozy cartoon digging game about a yeti, a tiny cabin, and some very questionable things buried underneath it.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Odd Fixes",
+    "url": "https://drunkyeti.itch.io/odd-fixes",
+    "image": "./assets/covers/odd-fixes.webp",
+    "description": "",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "\u200b New Year's Midnight \u2014 Top-Down Asset Pack",
+    "url": "https://drunkyeti.itch.io/new-years-midnight-top-down-asset-pack",
+    "image": "./assets/covers/new-years-midnight-top-down-asset-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Pocket Patch",
+    "url": "https://drunkyeti.itch.io/pocket-patch",
+    "image": "./assets/covers/pocket-patch.webp",
+    "description": "",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "New Year\u2019s Midnight \u2014 2D Side-Scroller Asset Pack",
+    "url": "https://drunkyeti.itch.io/new-years-midnight-2d-side-scroller-asset-pack",
+    "image": "./assets/covers/new-years-midnight-2d-side-scroller-asset-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "\u200b  Winter & Christmas \u2014 2D Side-Scroller Asset Pack",
+    "url": "https://drunkyeti.itch.io/winter-christmas-2d-side-scroller-asset-pack",
+    "image": "./assets/covers/winter-christmas-2d-side-scroller-asset-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Autumn & Thanksgiving \u2014 Top-Down Collection",
+    "url": "https://drunkyeti.itch.io/autumn-thanksgiving-top-down-collection",
+    "image": "./assets/covers/autumn-thanksgiving-top-down-collection.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "\u200b  Winter & Christmas \u2014 Top-Down Adventure Pack",
+    "url": "https://drunkyeti.itch.io/winter-christmas-top-down-adventure-pack",
+    "image": "./assets/covers/winter-christmas-top-down-adventure-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Autumn & Thanksgiving \u2014 2D Side-Scroller Asset Pack",
+    "url": "https://drunkyeti.itch.io/autumn-thanksgiving-2d-side-scroller-asset-pack",
+    "image": "./assets/covers/autumn-thanksgiving-2d-side-scroller-asset-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Halloween Realms \u2014 Complete Top-Down Asset Pack",
+    "url": "https://drunkyeti.itch.io/halloween-realms-complete-top-down-asset-pack",
+    "image": "./assets/covers/halloween-realms-complete-top-down-asset-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": true
+  },
+  {
+    "title": "Halloween Realms \u2014 Complete Game Asset Pack",
+    "url": "https://drunkyeti.itch.io/halloween-realms-complete-game-asset-pack",
+    "image": "./assets/covers/halloween-realms-complete-game-asset-pack.webp",
+    "description": "",
+    "category": "Assets",
+    "browser": false
+  },
+  {
+    "title": "Violin/Cello Solo MIDI Generator",
+    "url": "https://drunkyeti.itch.io/violincello-solo-midi-generator",
+    "image": "./assets/covers/violincello-solo-midi-generator.webp",
+    "description": "Generate expressive violin-solo MIDI in seconds!",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Piano Solo MIDI Generator",
+    "url": "https://drunkyeti.itch.io/piano-solo-midi-generator",
+    "image": "./assets/covers/piano-solo-midi-generator.webp",
+    "description": "Generate expressive two-handed piano solos as MIDI.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Drum Solo MIDI Generator",
+    "url": "https://drunkyeti.itch.io/drum-solo-midi-generator",
+    "image": "./assets/covers/drum-solo-midi-generator.webp",
+    "description": "Generate original, through\u2011composed drum solos as MIDI",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Bass Solo MIDI Generator",
+    "url": "https://drunkyeti.itch.io/bass-solo-midi-generator",
+    "image": "./assets/covers/bass-solo-midi-generator.webp",
+    "description": "",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "eBook Maker",
+    "url": "https://drunkyeti.itch.io/ebook-maker",
+    "image": "./assets/covers/ebook-maker.webp",
+    "description": "Create professional ebooks with ease! Import text, organize chapters, preview your book, and export to EPUB.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Chainfall \u2014 Jump, Convert, Dominate",
+    "url": "https://drunkyeti.itch.io/chainfall",
+    "image": "./assets/covers/chainfall.webp",
+    "description": "Chainfall is a top-down strategic puzzle game of jumps and capture opponents and control territory.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Rubberban Frenzy",
+    "url": "https://drunkyeti.itch.io/rubberban-frenzy",
+    "image": "./assets/covers/rubberban-frenzy.webp",
+    "description": "Rubberband Frenzy \u2014 fast local 1\u20134 player triangular board game.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Word Pizzler",
+    "url": "https://drunkyeti.itch.io/word-pizzler",
+    "image": "./assets/covers/word-pizzler.webp",
+    "description": "Hybrid word game that fuses Scrabble scoring, Boggle adjacency, Yahtzee multipliers and Rubik-style row/column rotation",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Hover Rancher",
+    "url": "https://drunkyeti.itch.io/hover-rancher",
+    "image": "./assets/covers/hover-rancher.webp",
+    "description": "",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Squirrel Idle Tycoon",
+    "url": "https://drunkyeti.itch.io/squirrel-idle-tycoon",
+    "image": "./assets/covers/squirrel-idle-tycoon.webp",
+    "description": "Addictive idle game where you grow a squirrel-powered ice and water business into a thriving empire.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Emu Empire",
+    "url": "https://drunkyeti.itch.io/emu-empire",
+    "image": "./assets/covers/emu-empire.webp",
+    "description": "Will You Be The Best Emu King?",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Nexus Wars",
+    "url": "https://drunkyeti.itch.io/nexus-wars",
+    "image": "./assets/covers/nexus-wars.webp",
+    "description": "Strategic hex-based puzzle game where 4 players battle for territory control through piece placement and captures.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Schmuck!",
+    "url": "https://drunkyeti.itch.io/schmuck",
+    "image": "./assets/covers/schmuck.webp",
+    "description": "Schmuck is a fast-paced climbing card game where players fight their way up the social ladder.",
+    "category": "Games",
+    "browser": false
+  },
+  {
+    "title": "Block Battler",
+    "url": "https://drunkyeti.itch.io/block-battler",
+    "image": "./assets/covers/block-battler.webp",
+    "description": "Block Battler is a multiplayer turn-based Tetris puzzle game where 2-4 players compete",
+    "category": "Games",
+    "browser": true
+  },
+  {
+    "title": "Website Analyzer",
+    "url": "https://drunkyeti.itch.io/website-analyzer",
+    "image": "./assets/covers/website-analyzer.webp",
+    "description": "Analyze Any Website in Depth",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Pattern Maker",
+    "url": "https://drunkyeti.itch.io/pattern-maker",
+    "image": "./assets/covers/pattern-maker.webp",
+    "description": "A fast, creative pattern-maker that turns any image or sticker into seamless, tileable textures",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Prompt Pioneer",
+    "url": "https://drunkyeti.itch.io/prompt-pioneer",
+    "image": "./assets/covers/prompt-pioneer.webp",
+    "description": "Create, optimize, and manage prompts for ChatGPT, Claude, Midjourney, and 10+ AI platforms all in one desktop app.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Writing Wizard",
+    "url": "https://drunkyeti.itch.io/writing-wizard",
+    "image": "./assets/covers/writing-wizard.webp",
+    "description": "",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Art Idea Generator",
+    "url": "https://drunkyeti.itch.io/art-idea-generator",
+    "image": "./assets/covers/art-idea-generator.webp",
+    "description": "Create 144+ million possible combinations to spark your next masterpiece.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Music Idea Generator",
+    "url": "https://drunkyeti.itch.io/music-idea-generator",
+    "image": "./assets/covers/music-idea-generator.webp",
+    "description": "",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "BrushMakerPro",
+    "url": "https://drunkyeti.itch.io/brushmakerpro",
+    "image": "./assets/covers/brushmakerpro.webp",
+    "description": "Design dynamic, colorful brushes from scratch or convert any image into a brush using the intuitive lasso tool.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Guitar Solo Midi Generator",
+    "url": "https://drunkyeti.itch.io/guitar-midi-generator",
+    "image": "./assets/covers/guitar-midi-generator.webp",
+    "description": "Choose from 20+ scales, add realistic articulations (bends, slides, vibrato), and export as MIDI for your DAW.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Deep Web Explorer",
+    "url": "https://drunkyeti.itch.io/deep-web-explorer",
+    "image": "./assets/covers/deep-web-explorer.webp",
+    "description": "Discover the weird, wonderful, and unexplored corners of the internet with automatic link validation and smart caching.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Desktop Snowing App",
+    "url": "https://drunkyeti.itch.io/desktop-snowing-app",
+    "image": "./assets/covers/desktop-snowing-app.webp",
+    "description": "A lightweight, customizable desktop overlay that makes it snow without interrupting your work.",
+    "category": "Tools",
+    "browser": false
+  },
+  {
+    "title": "Document to Video Converter",
+    "url": "https://drunkyeti.itch.io/document-to-video-converter",
+    "image": "./assets/covers/document-to-video-converter.webp",
+    "description": "Transform documents into professional videos in minutes!",
+    "category": "Tools",
+    "browser": false
+  }
+]
