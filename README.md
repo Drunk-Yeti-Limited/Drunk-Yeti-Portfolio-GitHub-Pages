@@ -1,4 +1,4 @@
-# Drunk Yeti portfolio — v1.0
+# Drunk Yeti portfolio — v1.1
 
 A self-contained, buildless Three.js portfolio for desktop and mobile layouts.
 
@@ -19,26 +19,35 @@ Opening `index.html` directly with a `file://` URL will block module/model fetch
 
     python3 -m http.server 8080
 
-Then visit `http://localhost:8080`. When using this source repository rather than the delivery ZIP, serve `dist/`.
+Then visit `http://localhost:8080`. This GitHub Pages repository serves the website from its root.
 
 ## What's included
 
 - Original Drunk Yeti mascot extracted from Collision Karts v0.33, with its 78 skinned meshes and 19 animation clips preserved in GLB.
 - Toon materials, idle/blink behavior, a custom bone-driven greeting, turntable spin, and pointer response.
 - Glossy inflated logo, derived from the studio's original itch.io logo silhouette, with rounded front/back geometry, moving lighting, and touch rotation.
-- 60 current itch.io entries with local artwork, categories, search, browser-demo filtering, and progressive display.
+- 78 public itch.io entries plus the verified Hover Rancher soundtrack on Steam, with local artwork, categories, search, browser-demo filtering, and progressive display.
 - Six actual videos discovered on the supplied YouTube channel, with click-to-open privacy-enhanced YouTube embeds.
-- Links to Steam, itch.io, YouTube, X, and the existing Google Sites archive.
+- Dedicated mod, soundtrack and merch panels; Redbubble shop and Facebook community links alongside Steam, itch.io, YouTube, X, and the Google Sites archive.
 - Responsive CSS, reduced-motion behavior, static image fallbacks, keyboard controls, mobile frame-rate limits, and offscreen animation suspension.
 - All Three.js dependencies self-hosted, pinned to r170. YouTube is contacted for playback only after a video is selected. Store and social links are external destinations.
 
 ## Edit the collection
 
-Update `assets/catalog.json` (or `dist/assets/catalog.json` in the source repo). Fields are `title`, `url`, `image`, `description`, `category` (`Games`, `Tools`, `Assets`), and `browser` (boolean). Prices and operating-system promises are deliberately left to the storefront pages, where current download availability is authoritative.
+Update `assets/catalog.json`. Fields are `title`, `url`, `image`, `description`, `category` (`Games`, `Tools`, `Assets`, `Mods`, `Soundtracks`, `Comics`), and `browser` (boolean). An optional `storefront` labels external store destinations. Prices and operating-system promises are left to the storefront pages, where current download availability is authoritative.
 
 Update `assets/videos.json` with each video's `id` and `title`. Put a matching thumbnail at `assets/VIDEO-ID.jpg`.
 
-The gallery is a snapshot, not a live storefront sync. Refresh it when releases change. `scripts/prepare-assets.py` in the source repo can refresh public itch.io metadata and cover art; it requires Python, Pillow and network access.
+The gallery is a snapshot. Refresh it when releases change:
+
+    python3 -m pip install Pillow
+    python3 scripts/prepare-assets.py
+
+The script reads the public itch.io profile, classifies the listings, downloads new or changed artwork, verifies cached images, and writes `assets/catalog.json` and `assets/catalog-meta.json`. It preserves the existing catalog if the profile response appears incomplete. Listings without cover artwork use the studio logo. It requires Python 3.9+, Pillow and network access. No API key or Actions workflow is required.
+
+`catalog-extras.json` holds explicitly verified external store listings, currently the Hover Rancher Soundtrack on Steam. Do not populate it with guessed or unpublished page URLs. As of the October 23 refresh, no soundtracks appeared on the public itch.io profile; newly listed soundtracks will be classified automatically on the next refresh. The mod and music buttons clear other filters before opening their category.
+
+After reviewing the result, commit `scripts/`, `catalog-extras.json`, the generated catalog metadata and changed images along with any page updates. Browser preview files are ignored by Git.
 
 ## Models
 
@@ -53,7 +62,7 @@ OBJ stores static geometry; motion is implemented in the website and the mascot'
 
 ## Verification
 
-JavaScript syntax, local paths/imports, image decoding, GLB rig/clip loading, finite animated geometry bounds, logo topology and OBJ/MTL references were checked. Browser rendering, real-device performance, and video playback were not exercised in this environment. Please test on your phone and desktop before making the GitHub Pages version public.
+The original release checked model loading, rig clips and logo topology. The v1.1 refresh checks JavaScript syntax, catalog categories, local asset references and image decoding. Browser preview was blocked by the browser URL security policy in this environment, so visual rendering and real-device behavior remain unverified for this update.
 
 ## Credits and licenses
 
