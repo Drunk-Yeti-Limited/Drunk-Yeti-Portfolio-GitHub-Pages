@@ -1,0 +1,2 @@
+export function allowedRedirect(value){const u=new URL(value);if(!['https:','http:'].includes(u.protocol)&&!/^yeti[-a-z0-9]*:$/.test(u.protocol))throw Error('Unsupported app callback.');if(u.protocol==='http:'&&!['127.0.0.1','[::1]'].includes(u.hostname))throw Error('Insecure callback.');if(u.username||u.password)throw Error('Invalid callback.');return u.href}
+export function consentScopes(details,app){if(!app)throw Error('App not enabled');return [...new Set([...(details.scope||'').split(' ').filter(Boolean),...app.scopes])];}

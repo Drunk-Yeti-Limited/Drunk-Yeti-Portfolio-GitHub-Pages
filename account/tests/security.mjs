@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {allowedRedirect,consentScopes} from '../src/security.js';
+for(const url of ['javascript:alert(1)','data:text/html,evil','http://evil.example/callback','https://user:password@example.com/callback','file:///tmp/a'])assert.throws(()=>allowedRedirect(url));
+for(const url of ['https://example.com/callback?code=x','http://127.0.0.1:4000/callback','yeti-house://auth/callback'])assert.equal(allowedRedirect(url),url);
+assert.throws(()=>consentScopes({scope:'openid'},null));assert.deepEqual(consentScopes({scope:'openid profile'},{scopes:['profile','saves']}),['openid','profile','saves']);
+const html=await readFile(new URL('../index.html',import.meta.url),'utf8'),js=await readFile(new URL('../src/app.js',import.meta.url),'utf8');
+for(const [,id] of js.matchAll(/\$\('([^']+)'\)/g))assert.ok(html.includes('id="'+id+'"'),id+' missing');
+assert.ok(!js.includes('.innerHTML'));assert.ok(html.includes("script-src 'self'"));
+console.log('PASS callback security, consent capabilities, UI element contracts and safe text rendering');

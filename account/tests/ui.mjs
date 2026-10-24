@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {mock} from 'node:test';
+import {parseHTML} from 'linkedom';
+import {readFile} from 'node:fs/promises';
+const {document}=parseHTML(await readFile(new URL('../index.html',import.meta.url),'utf8'));
+globalThis.document=document;globalThis.location={origin:'https://www.drunkyetistudio.com',pathname:'/account/',href:'https://www.drunkyetistudio.com/account/',search:''};globalThis.sessionStorage={getItem:()=>null,removeItem:()=>{}};
+let current=null,fail=false,authCalls=0,onAuth;const calls=[];
+const rows={dy_profiles:{player_id:'a',handle:'alice',display_name:'Alice',discoverable:true,share_achievements:false},dy_saves:[{game_id:'house-of-wilds',slot:0,revision:2,updated_at:'2026-10-24T00:00:00Z'}],dy_achievements:[]};
+const sb={auth:{getUser:async()=>({data:{user:current},error:null}),onAuthStateChange:fn=>{onAuth=fn},signOut:async()=>{current=null;return {error:null}},signUp:async()=>{authCalls++;return {error:null}},resetPasswordForEmail:async()=>{authCalls++;return {error:null}}},from:name=>{const result={data:rows[name],error:fail?Error('Temporary database failure'):null};const chain={select:()=>chain,eq:()=>chain,is:()=>chain,maybeSingle:()=>Promise.resolve(result),then:(...args)=>Promise.resolve(result).then(...args)};return chain},rpc:async(name,args)=>{calls.push({name,args});return {data:[],error:null}}};
+mock.module('@supabase/supabase-js',{namedExports:{createClient:()=>sb}});
+await import('../src/app.js');const settle=()=>new Promise(resolve=>setTimeout(resolve,10));await settle();
+assert.equal(document.getElementById('auth').hidden,false);assert.equal(document.getElementById('dashboard').hidden,true);
+document.getElementById('mode').click();assert.match(document.getElementById('status').textContent,/not open/);
+document.getElementById('forgot').click();await settle();assert.equal(authCalls,0);assert.match(document.getElementById('status').textContent,/not ready/);
+current={id:'a',email:'test@example.invalid'};document.getElementById('refresh').click();await settle();assert.equal(document.getElementById('dashboard').hidden,false);assert.equal(document.getElementById('handle').value,'alice');assert.match(document.getElementById('save-list').textContent,/Revision 2/);
+fail=true;current={id:'b',email:'b@example.invalid'};document.getElementById('refresh').click();await settle();assert.equal(document.getElementById('handle').value,'');assert.equal(document.getElementById('save-list').textContent,'');assert.equal(document.getElementById('dashboard').hidden,false);assert.match(document.getElementById('status').textContent,/Temporary/);
+document.getElementById('logout').click();await settle();assert.equal(document.getElementById('dashboard').hidden,true);assert.equal(document.getElementById('auth').hidden,false);
+console.log('PASS logged-out state, release gates, profile/save rendering, account-switch clearing, API failure recovery and logout');

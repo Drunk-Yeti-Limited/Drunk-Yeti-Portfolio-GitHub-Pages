@@ -1,0 +1,17 @@
+{
+  "name": "yeti-accounts",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --format=esm --minify --outfile=app.js",
+    "test": "node tests/security.mjs && node --experimental-test-module-mocks tests/ui.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "linkedom": "0.18.12"
+  }
+}
