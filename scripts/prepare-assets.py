@@ -202,4 +202,13 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    from refresh_merch import refresh_merch
+    failures = []
+    for name, refresh in [('itch.io', main), ('Redbubble', refresh_merch)]:
+        try:
+            refresh()
+        except Exception as error:
+            failures.append(name)
+            print(f'{name} refresh failed: {error}. Last saved catalog retained.', file=sys.stderr)
+    if failures:
+        sys.exit(1)

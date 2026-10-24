@@ -38,10 +38,14 @@ Update `assets/catalog.json`. Fields are `title`, `url`, `image`, `description`,
 
 Update `assets/videos.json` with each video's `id` and `title`. Put a matching thumbnail at `assets/VIDEO-ID.jpg`.
 
-The gallery is a snapshot. Refresh it when releases change:
+The games and merch galleries are snapshots. Refresh both when releases change:
 
     python3 -m pip install Pillow
     python3 scripts/prepare-assets.py
+
+The same command also refreshes the public Redbubble shop into `assets/merch.json`, `assets/merch-meta.json`, and compressed product images under `assets/merch/`. It reads public shop-page data, follows exposed next-page links, verifies artist ownership, and preserves the last saved catalog if the shop response is blocked, empty or incomplete. If the image CDN rejects downloading, existing local thumbnails are retained; new products use the exact public image URL from the shop. Such fallbacks are reported in merch metadata. Browsers contact Redbubble's CDN for those images, which can still fail independently; the studio logo is the last-resort display fallback. A failed source refresh exits with an error while still allowing the other source to update. No login or private API is used. Run `python3 scripts/refresh_merch.py` to refresh merch alone.
+
+The merch gallery shows eight products initially, with a More merch button. Prices and options are left to Redbubble so cached prices are never presented as current. New products appear on the website after rerunning the script and committing the generated files. This is an on-demand refresh, not an automatically scheduled job.
 
 The script reads the public itch.io profile, classifies the listings, downloads new or changed artwork, verifies cached images, and writes `assets/catalog.json` and `assets/catalog-meta.json`. It preserves the existing catalog if the profile response appears incomplete. Listings without cover artwork use the studio logo. It requires Python 3.9+, Pillow and network access. No API key or Actions workflow is required.
 
